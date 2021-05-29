@@ -1,0 +1,45 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 800px;
+    height: 400px;
+    background: midnightblue;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    /* flex-direction: column; */
+}
+.item {
+    height: 150px;
+    width: 150px;
+    background: gold;
+    margin: 5px;
+    /* flex-basis: 150px; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    /* flex-shrink: 0; */
+    /* flex: 0 1 150px */
+    /* grow shrink basiswidth */
+}
+.item:nth-child(1) {
+    background: lightblue;
+    /* align-self: center; */
+    margin: auto;
+
+    /* align-self: flex-start; */
+    /* align-self: flex-end; */
+}
+.item:nth-child(2) {
+    background: lightgreen;
+}
+.item:nth-child(3) {
+    background: salmon;
+    align-self: flex-end;
+    margin-left: auto;
+}
